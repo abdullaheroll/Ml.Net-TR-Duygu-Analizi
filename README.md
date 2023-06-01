@@ -1,4 +1,4 @@
-# Ml.Net TR Duygu Analizi
+# Makine Öğrenimi > TR Duygu Analizi
 
 -------------------------
 
