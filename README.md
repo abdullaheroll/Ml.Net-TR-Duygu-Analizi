@@ -1,4 +1,4 @@
-# Makine Öğrenimi > TR Duygu Analizi
+# Makine Öğrenimi - TR Duygu Analizi
 
 -------------------------
 
