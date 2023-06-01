@@ -1,4 +1,4 @@
-# Ml.Net-TR-Duygu-Analizi
+# Ml.Net TR Duygu Analizi
 
 -------------------------
 
