@@ -12,6 +12,8 @@ Projemde kullandığım veri kümesi, https://www.kaggle.com/datasets/burhanbile
 
 ML.NET yapısını kullanarak, veri kümesini yükledim ve verileri modelime uygun hale getirmek için bazı dönüşümler uyguladım. Daha sonra, ML.NET'in sunduğu hazır algoritmalardan biri olan SdcaLogisticRegression'u kullanarak bir sınıflandırma modeli oluşturdum. Modelimi eğitmek için veri kümesinin %80'ini eğitim verisi olarak kullandım ve kalan %20'sini test verisi olarak ayırdım. Modelimi 1 saat süreyle eğittim ve sonrasında test verisi üzerinde değerlendirdim.
 
+![alt text](https://github.com/abdullaheroll/Ml.Net-TR-Duygu-Analizi/blob/main/TRDuyguAnalizi/bin/Debug/net7.0/programarayuz.png?raw=true)
+
 Modelimin performansını ölçmek için doğruluk (accuracy) skoru gibi metrikler kullandım. Modelimin doğruluk payı neredeyse %90 olarak çıktı. Bu da modelimin ürün yorumlarının duygularını oldukça iyi tahmin edebildiğini gösteriyor.
 
 Projemin sonucunda, ML.NET ile e-ticaret sitelerinde veye herhangi bir projede kullanılabilecek bir duygu analizi programı geliştirmiş oldum. Bu program sayesinde, işletmeler müşterilerin ürünler hakkındaki görüşlerini daha kolay anlayabilir ve buna göre hareket edebilirler. Projemin avantajları arasında ML.NET'in kolay kullanımı, performansı ve .NET platformu ile uyumluluğu sayılabilir. Projemin sınırlamaları arasında ise veri kümesinin küçük boyutu, Türkçe dilinin zorluğu ve duygu analizinin karmaşıklığı sayılabilir.
