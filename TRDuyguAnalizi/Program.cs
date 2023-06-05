@@ -66,7 +66,7 @@ while (true)
     var predictedLabel = result.PredictedLabel == "Olumlu" ? "Olumlu" : "Olumsuz";
 
     // Sonucun doğruluk skorunu yüzdelik olarak hesapla
-    var skor = result.Score[0] * 100;
+    var skor = result.Score[1] * 100;
 
     // Doğruluk skorunu formatlayarak yüzdelik olarak tut
     var formattedScore = $"{skor:00.00}%";
