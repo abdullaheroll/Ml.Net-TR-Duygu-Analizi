@@ -1,4 +1,4 @@
-﻿using MyMLApp;
+using MyMLApp;
 using static System.Net.Mime.MediaTypeNames;
 Console.Title = "Ml.Net Duygu Analizi";
 // Başlığı ortalamak için konsol genişliğini hesapla
@@ -38,7 +38,7 @@ while (true)
     Console.Write("Cümle Girin (Çıkmak için 'exit' yazın, ekranı temizlemek için 'clear' yazın): ");
     var input = Console.ReadLine();
     Console.WriteLine("**************************************");
-   
+
 
     if (input.ToLower() == "exit")
     {
@@ -66,15 +66,27 @@ while (true)
     var predictedLabel = result.PredictedLabel == "Olumlu" ? "Olumlu" : "Olumsuz";
 
     // Sonucun doğruluk skorunu yüzdelik olarak hesapla
-    var skor = result.Score[1] * 100;
+    var PositiveScore = result.Score[1] * 100;
+    var NegativeScore = result.Score[0] * 100;
 
     // Doğruluk skorunu formatlayarak yüzdelik olarak tut
-    var formattedScore = $"{skor:00.00}%";
+    var formattedPositiveScore = $"{PositiveScore:00.00}%";
+    var formattedNegativeScore = $"{NegativeScore:00.00}%";
 
     // Sonuçları ekrana yazdır
     Console.Write("\n");
     Console.ForegroundColor = ConsoleColor.Blue;
-    Console.WriteLine($"Durum: {predictedLabel}\nSkor: {formattedScore}\n");
+    if (predictedLabel == "Olumlu")
+    {
+        Console.WriteLine($"Durum: {predictedLabel}\nSkor: {formattedPositiveScore}\n");
+
+    }
+    else
+    {
+        Console.WriteLine($"Durum: {predictedLabel}\nSkor: {formattedNegativeScore}\n");
+    }
+
+  
     Console.ForegroundColor = ConsoleColor.Magenta;
     Console.WriteLine("**************************************");
 }
